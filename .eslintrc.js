@@ -14,8 +14,19 @@ module.exports = {
     ecmaVersion: 2020
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off", // Предупреждение в проде офф консоль
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off", // Предупреждение в проде офф деббагер
+    "vue/max-attributes-per-line": [
+      "warn",
+      {
+        // каждый атрибут на новую строчку
+        singleline: 1,
+        multiline: {
+          max: 1,
+          allowFirstLine: false
+        }
+      }
+    ]
   },
   overrides: [
     {
