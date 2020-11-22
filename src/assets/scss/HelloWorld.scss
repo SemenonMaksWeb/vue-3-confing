@@ -1,3 +1,6 @@
+div > h3{
+  margin-top: 20px;
+}
 h3 {
     margin: 40px 0 0;
   }
@@ -8,7 +11,9 @@ h3 {
   li {
     display: inline-block;
     margin: 0 10px;
+    margin-left: 0.3rem;
   }
   a {
-    color: #42b983;
+     margin-left: 0.111px;
+     width: calc(100px - 20px);
   }

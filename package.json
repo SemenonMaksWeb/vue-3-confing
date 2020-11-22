@@ -6,8 +6,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "lint:style": "stylelint **/*.{vue,css,sass,less,scss} --ignore-path .gitignore"
+    "lint:style": "stylelint **/*.{vue,css,sass,less,scss} --ignore-path .gitignore",
+    "lint:js": "eslint --ext .js,.vue,.ts --ignore-path .gitignore .",
+    "prettier": "prettier --write src/**/*.{js,ts,vue}"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -51,7 +52,6 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
       "git add"
     ]
   }
