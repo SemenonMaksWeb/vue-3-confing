@@ -60,7 +60,7 @@ module.exports = {
     "vue/prop-name-casing": ["warn", "snake_case"],
     "vue/require-prop-types": "warn",
     "vue/order-in-components": [
-      "error",
+      "warn",
       {
         order: [
           "el",
@@ -76,6 +76,8 @@ module.exports = {
           "ROUTER_GUARDS",
           "layout",
           "middleware",
+          "data",
+          "methods",
           "validate",
           "scrollToTop",
           "transition",
@@ -86,14 +88,12 @@ module.exports = {
           "emits",
           "setup",
           "asyncData",
-          "data",
           "fetch",
           "head",
           "computed",
           "watch",
           "watchQuery",
           "LIFECYCLE_HOOKS",
-          "methods",
           ["template", "render"],
           "renderError",
         ],
